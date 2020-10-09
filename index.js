@@ -201,14 +201,22 @@ export const artists = [
     }
 ]
 
-// 🖌🖼 M V P 🖼🖌 //
+// // 🖌🖼 M V P 🖼🖌 //
 
-/* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Practice accessing data above by console.log-ing following items:
+// /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
+// Practice accessing data above by console.log-ing following items:
 
-(1) Name of the first artist (0th index) in the array
-(2) Bio of the third artist (2nd index) in the array */
+// (1) Name of the first artist (0th index) in the array
+    
+console.log(artists[0].name);
 
+
+
+
+
+// (2) Bio of the third artist (2nd index) in the array */
+
+console.log(artists[2].bio);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -225,10 +233,10 @@ Create a function called `getArtistByIndex` that takes two arguments:
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(arr , index) {
+  return `the artist at index 0 is ${arr[index].name}`
 }
-
+    console.log(getArtistByIndex(artists , 0))
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
